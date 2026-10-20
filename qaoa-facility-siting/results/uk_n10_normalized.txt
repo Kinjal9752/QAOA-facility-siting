@@ -1,0 +1,46 @@
+
+========================================================================
+  UK (named towns)  —  10 sites,  budget K = 3
+========================================================================
+  penalty weight P (calibrated) : 151.633
+  qubits / Ising couplings      : 10 / 45
+
+  site              A (install+S+Op)   B (capture)         nearest hub      km
+  Scunthorpe                  11.494       126.000              Humber      30
+  Sheffield                   14.407       126.000              Humber      88
+  Teesside                    10.281       126.000            Teesside       6
+  Port Talbot                 20.463       126.000       Liverpool Bay     209
+  Grangemouth                 20.391       126.000           St Fergus     208
+  Hull                        10.793       126.000              Humber      16
+  Ellesmere Port              11.629       126.000       Liverpool Bay      33
+  Immingham                   10.086       126.000              Humber       2
+  Aberdeen                    12.452       126.000           St Fergus      49
+  Bristol                     21.377       126.000       Liverpool Bay     228
+
+  shared-hub discounts C_ij: (Scunthorpe,Sheffield)=-2.0, (Scunthorpe,Hull)=-2.0, (Scunthorpe,Immingham)=-2.0, (Hull,Immingham)=-2.0
+  [restart 0] 0000000000  weight=0  feasible=False  objective=1364.6944  top=40/5000  (12.5s)
+  [restart 1] 0001011100  weight=4  feasible=False  objective=-301.3965  top=28/5000  (11.9s)
+  [restart 2] 1000001001  weight=3  feasible=True  objective=-333.5003  top=46/5000  (10.4s)
+  [restart 3] 0000000010  weight=1  feasible=False  objective=492.9833  top=43/5000  (7.2s)
+  [restart 4] 1010000100  weight=3  feasible=True  objective=-348.1392  top=47/5000  (11.9s)
+
+--------------------------------------------------------------------------------------------
+                             EXACT (brute force)      CLASSICAL (anneal)      QUANTUM (QAOA)
+--------------------------------------------------------------------------------------------
+  objective value                      -351.6272               -351.6272           -348.1392
+  % gap vs exact                          0.0000                  0.0000              0.9920
+  feasible (solution)                       True                    True                True
+  QAOA optimizer status                                                              False/3
+  Hamming weight                                                                           3
+  top sample count/shots                                                             47/5000
+  wall-clock (s)                               —                  2.5504             54.0090
+  states evaluated                          1024                       —                   —
+  approximation ratio                     1.0000                  1.0000              0.9995
+--------------------------------------------------------------------------------------------
+  exact optimum : [Scunthorpe, Hull, Immingham]
+  classical     : [Scunthorpe, Hull, Immingham]
+  quantum (QAOA): [Scunthorpe, Teesside, Immingham]
+  penalty dominates (optimum respects budget): True
+  classical vs exact: MATCH
+  quantum vs exact  : DIFFERS
+

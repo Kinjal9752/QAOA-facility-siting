@@ -1,0 +1,42 @@
+
+========================================================================
+  synthetic  —  8 sites,  budget K = 3
+========================================================================
+  penalty weight P (calibrated) : 10.537
+  qubits / Ising couplings      : 8 / 28
+
+  site :  A (install)   B (benefit)   net (A-B)
+   0   :      10.76         8.24       +2.52
+   1   :      10.06         9.42       +0.64
+   2   :       7.36        12.99       -5.63
+   3   :       6.07         8.55       -2.48
+   4   :       8.09         6.10       +1.99
+   5   :       7.24        11.31       -4.07
+   6   :      10.27         9.80       +0.47
+   7   :       6.43         5.76       +0.67
+  [restart 0] 00110100  weight=3  feasible=True  objective=-13.1800  top=236/5000  (6.9s)
+  [restart 1] 00110100  weight=3  feasible=True  objective=-13.1800  top=2616/5000  (4.3s)
+  [restart 2] 00110100  weight=3  feasible=True  objective=-13.1800  top=166/5000  (2.4s)
+  [restart 3] 10000000  weight=1  feasible=False  objective=44.6700  top=170/5000  (4.1s)
+  [restart 4] 00110100  weight=3  feasible=True  objective=-13.1800  top=198/5000  (3.2s)
+
+--------------------------------------------------------------------------------------------
+                             EXACT (brute force)      CLASSICAL (anneal)      QUANTUM (QAOA)
+--------------------------------------------------------------------------------------------
+  objective value                       -13.1800                -13.1800            -13.1800
+  % gap vs exact                          0.0000                  0.0000              0.0000
+  feasible (solution)                       True                    True                True
+  QAOA optimizer status                                                               True/0
+  Hamming weight                                                                           3
+  top sample count/shots                                                            236/5000
+  wall-clock (s)                               —                  1.9356             21.0078
+  states evaluated                           256                       —                   —
+  approximation ratio                     1.0000                  1.0000              1.0000
+--------------------------------------------------------------------------------------------
+  exact optimum : [2, 3, 5]
+  classical     : [2, 3, 5]
+  quantum (QAOA): [2, 3, 5]
+  penalty dominates (optimum respects budget): True
+  classical vs exact: MATCH
+  quantum vs exact  : MATCH
+

@@ -1,0 +1,9 @@
+{
+  "_note": "Approximate locations of four publicly announced UK CO2 transport and storage clusters. Coordinates are rough and for illustration only.",
+  "hubs": [
+    {"name": "Teesside", "cluster": "East Coast Cluster", "region": "North East England", "lat": 54.60, "lon": -1.15},
+    {"name": "Humber", "cluster": "East Coast Cluster", "region": "Yorkshire and the Humber", "lat": 53.62, "lon": -0.20},
+    {"name": "Liverpool Bay", "cluster": "HyNet North West", "region": "North West England", "lat": 53.45, "lon": -3.30},
+    {"name": "St Fergus", "cluster": "Acorn (Scottish Cluster)", "region": "North East Scotland", "lat": 57.57, "lon": -1.84}
+  ]
+}
